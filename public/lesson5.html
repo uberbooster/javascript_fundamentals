@@ -78,7 +78,11 @@
                     <label for="password">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                <button class="btn btn-primary">Submit</button>
+                <div class="form-group">
+                    <label for="text">Hobby</label>
+                    <input type="text" class="form-control" id="hobby" placeholder="What is your hobby">
+                </div>
+                <button id='submit-button' type='button' class="btn btn-primary">Submit</button>
             </form>
 
         </div>
@@ -90,9 +94,13 @@
             <p id="email-output"></p>
             <br>
             <h4 id = "password-label">Password:</h4>
-            
+            <p id="password-output"></p>
+            <br>
+            <h4 id="hobby-label">Hobby:</h4>
+            <p id="hobby-output"></p>
         </div>
         <!-- /#second -->
+
     </div>
     <!-- /.container -->
 
@@ -101,28 +109,50 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
     <script>
         //Lets change some content and a little styles
 
         //Let's get ahold of all of these elements
-
+          var emailInput = document.getElementById('email');
+          var passwordInput = document.getElementById('password');
+          var hobbyInput = document.getElementById('hobby');
+          var button = document.querySelector('button.btn.btn-primary');
+          var emailOutput = document.querySelector('#email-output');
+          var passwordOutput = document.querySelector('#password-output');
+          var hobbyOutput = document.querySelector('#hobby-output');
         //Let's write a handling function for the button click
-            //use the elements from the form and get their values
-            //apply that value as the innerText for the output respective output portions
-            //add a little styling
-        //Let's attach an eventListener to the button for the click event
+          function clickHandler(){
 
-/*
-        Assignment:
-            - Add another form input of your choice... Maybe age or name?
-            - Get a reference to the DOM element and assign that a variable
-            - Add code to the click handler so that you achieve the following:
-                    - You update a value in the output section of your page
-                    - You alter the styles of the output for your field with the following
-                        --> Your font color is red
-                        --> Your element has a black background color
-                        --> The element is added using JavaScript to your page under the already present output portions.
-*/
+            //use the elements from the form and get their values
+            var emailValue = emailInput.value;
+            var passwordValue = passwordInput.value;
+            var hobbyValue = hobbyInput.value;
+            //apply that value as the innerText for the output respective output portions
+            emailOutput.innerText = emailValue;
+            passwordOutput.innerText = passwordValue;
+            hobbyOutput.innerText = hobbyValue;
+            //add a little styling
+            emailOutput.style.backgroundColor = 'chartreuse';
+            passwordOutput.style.backgroundColor = 'bisque';
+            hobbyOutput.style.color = 'red';
+            hobbyOutput.style.backgroundColor = "black";
+          }
+        //Let's attach an eventListener to the button for the click event
+          button.addEventListener('click', clickHandler);
+
+
+        // Assignment:
+        //     - Add another form input of your choice... Maybe age or name?
+        //     - Get a reference to the DOM element and assign that a variable
+
+        //     - Add code to the click handler so that you achieve the following:
+        //             - You update a value in the output section of your page
+        //             - You alter the styles of the output for your field with the following
+        //                 --> Your font color is red
+        //                 --> Your element has a black background color
+        //                 --> The element is added using JavaScript to your page under the already present output portions.
+
     </script>
 </body>
 

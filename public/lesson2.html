@@ -61,12 +61,12 @@
     <!-- Page Content -->
     <div class="container">
         <div id="first">
-            
+
         </div>
         <!-- /#first -->
 
         <div id="second">
-            
+
         </div>
         <!-- /#second -->
     </div>
@@ -92,46 +92,81 @@
     //Arrays
 
     //Objects
+    var number=0; var a=2; var b=2.0;
+    var c=false; var d=true;
+    var x='bacon';
+    var y="bacon";
+    var z = [true,2,'hummer']
+    var obj={firstName:'justin',lastName:'Dennison'};
+    var objAlso={'firstName':'justin','lastName':'Dennison'};
+    console.log("a+b =",a+b);
+    console.log("c&&d =",c&&d);
+    console.log("x+y+x = ",x+y+x);
+    z[2]="crowbar";
+    console.log("z = ",z);
+    console.log("obj.firstName =",obj.firstName);
+    console.log("objAlso['firstName'] =",objAlso['firstName']);
+    obj.firstName="MC";
+    console.log("obj.firstName =",obj.firstName);
 
 /*
     Assignment: Create a variable for each of the following data types-
-                A. number
-                B. string
-                C. boolean
-                D. array
-                    i. Create an array with three numbers in it.
-                E. object
-                    i. You must have two properties name and age
-                    ii. You can set those properties to values of any type, but you must have a value
+/*                A. number*/
+                  var pencils=4
+/*                B. string*/
+                  var middleName="Robert";
+/*                C. boolean*/
+                  var isRed=false;
+/*                D. array*/
+/*                    i. Create an array with three numbers in it.*/
+                  var discount=[2,3,4];
+/*                E. object*/
+/*                    i. You must have two properties name and age*/
+/*                    ii. You can set those properties to values of any type, but you must have a value*/
+                  var Student = {
+                    name:"Jill",
+                    age:46,
+                  }
 
-        A. Using the number and MDN documentation/others that you can console.log the results of various math operations: *, /, +, -, square root, floor, ceil, and a random number between 0 and 1.
-        B. Using the string variable console.log each of the following: 
-                - Add the word "Hey" to the end of your string variable
-                - The second letter of your string variable's value
-                - The index of the letter 'e' in your string
-                - The first three letters of your string
-        C. Use your boolean [called bool in these instructions] print the results of your boolean expressions for the following:
-                - !bool
-                - bool || false
-                - bool || true
-                - bool && false
-                - bool && true
-                - !(bool || false)
-                - !(bool && false) 
-        D. Console.log the following:
-            - The last element of the array WITHOUT changing the array
-            - The last element of the array WITH changing the array
-            - Log the array after adding an element to the end of the array
-            - Log the array after adding an element to the second position
-            - Log the array after removing an element from the third position
-        E. Console.log the following:
-            - The value of the name property of the object
-            - The value of the name property in a different way than you did initially
-            - Change the age property of the object and log the object
-            - Change the age property of the object and log the object but use a different method
+/*       A. Using the number and MDN documentation/others that you can console.log the results of various math operations: *, /, +, -, square root, floor, ceil, and a random number between 0 and 1.*/
+/*            *, /, +, -, square root, floor, ceil, and a random number between 0 and 1    */
+              var multiplication = 64 * 64;
+              console.log("multiplication: ",multiplication);
+              var division = 64 / 64;
+              console.log("division: ",division);
+              var addition = 64 + 64;
+              console.log("addition: ",addition);
+              var subtraction = 64 - 64;
+              console.log("subtraction: ",subtraction);
+              var squareRoot = Math.sqrt(64);
+              console.log("Square Root: ",squareRoot);
+              var floor = Math.floor()
+/*        B. Using the string variable console.log each of the following:*/
+/*                - Add the word "Hey" to the end of your string variable*/
+/*                - The second letter of your string variable's value*/
+/*                - The index of the letter 'e' in your string*/
+/*                - The first three letters of your string*/
+/*        C. Use your boolean [called bool in these instructions] print the results of your boolean expressions for the following:*/
+/*                - !bool*/
+/*                - bool || false*/
+/*                - bool || true*/
+/*                - bool && false*/
+/*                - bool && true*/
+/*                - !(bool || false)*/
+/*                - !(bool && false)*/
+/*        D. Console.log the following:*/
+/*            - The last element of the array WITHOUT changing the array*/
+/*            - The last element of the array WITH changing the array*/
+/*            - Log the array after adding an element to the end of the array*/
+/*            - Log the array after adding an element to the second position*/
+/*            - Log the array after removing an element from the third position*/
+/*        E. Console.log the following:*/
+/*            - The value of the name property of the object*/
+/*            - The value of the name property in a different way than you did initially*/
+/*            - Change the age property of the object and log the object*/
+/*          - Change the age property of the object and log the object but use a different method*/
 
-        CHALLENGE: Print the elements of your array from D one at a time using a for loop.
-*/
+/*        CHALLENGE: Print the elements of your array from D one at a time using a for loop.*/
     </script>
 
 </body>
